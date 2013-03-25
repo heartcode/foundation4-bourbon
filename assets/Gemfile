@@ -1,0 +1,19 @@
+source 'http://rubygems.org'
+
+# Foundation Project
+gem 'zurb-foundation', '4.0.9'
+
+# Compiling
+gem 'bourbon'
+# gem 'neat'
+# gem 'terminal-notifier-guard'
+
+# Guard
+gem 'guard-sass', require: false
+gem 'guard'
+gem 'guard-process'
+gem 'juicer'
+
+gem 'guard-livereload', require: false
+gem 'rack-livereload'
+gem 'rb-fsevent', require: false
