@@ -1,3 +1,4 @@
+#set up sass compile preferences
 guard 'sass', 
   :input => 'compile/sass', 
   :output => 'css',
@@ -5,8 +6,10 @@ guard 'sass',
   :style => :compressed
   
 #watch these folders/files and reload browser when they are saved
+#get the chrome plugin for livereload in the chrome web store
 guard 'livereload' do
-  watch(%r{templates/+\.(php|html)}) #reload html templates on save
+  watch(%r{static/+\.(php|html)}) #watch html prototyping template folder
+  watch(%r{templates/+\.(php|html)}) #watch cms template folder
   watch(%r{css/.+\.css})
   watch(%r{js/.+\.js})
 end
